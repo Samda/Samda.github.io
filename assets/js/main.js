@@ -11,7 +11,6 @@ const showMenu = (toggleId, navId) => {
 
 showMenu('nav-toggle', 'nav-menu');
 
-
 const navLink = document.querySelectorAll('.nav__link') 
 
 function linkAction() {
@@ -35,23 +34,23 @@ const sr = ScrollReveal({
 })
 
 // Animate Contact Button 
-$(window).bind('scroll', function() {
-    if($('.button')[0].getBoundingClientRect().top >= 64){
-        $('button').addClass('button-reveal');
-        $('.button')[0].classList.remove('button-animate');
+// $(window).bind('scroll', function() {
+//     if($('.button')[0].getBoundingClientRect().top >= 64){
+//         $('button').addClass('button-reveal');
+//         $('.button')[0].classList.remove('button-animate');
 
-        console.log('Yes');
-    } else if ($('.button')[0].getBoundingClientRect().top <= 64){
-        $('.button').addClass('button-animate');
-        $('.button')[0].classList.remove('button-reveal');
-        console.log('No');
-    }
-})
+//         console.log('Yes');
+//     } else if ($('.button')[0].getBoundingClientRect().top <= 64){
+//         $('.button').addClass('button-animate');
+//         $('.button')[0].classList.remove('button-reveal');
+//         console.log('No');
+//     }
+// })
 
 // Typed JS
 $(function(){
 	$(".header-text-skills").typed({
-		strings: ['Front End', 'Back End', "And some DevOps"],
+		strings: ['Front End', 'Back End', "Some DevOps"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
@@ -96,7 +95,10 @@ sr.reveal('.home__social-icon', {interval: 200})
 
 // About
 sr.reveal('.about__subtitle', {})
-sr.reveal('.about__text', {delay: 200})
+sr.reveal('.about__text', {delay: 400})
+sr.reveal('.about__text1', {delay: 300})
+sr.reveal('.about__text2', {delay: 200})
+sr.reveal('.about__text3', {delay: 100})
 sr.reveal('.about__img', {delay: 400})
 
 // Skills

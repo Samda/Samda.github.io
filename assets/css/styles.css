@@ -292,17 +292,8 @@ img {
   text-align: center;
 }
 
-.aobut__subtitle {
+.about__subtitle {
   margin-bottom: var(--mb-2);
-}
-
-.about__img {
-  justify-self: center;
-}
-
-.about__img img {
-  width: 400px;
-  border-radius: .5rem;
 }
 
 /* Skills */
@@ -319,7 +310,7 @@ img {
 }
 
 .skills__text {
-  width: 70%;
+  width: 60%;
   text-align: center;
   margin: 10px auto;
   margin-bottom: var(--mb-2);
@@ -340,9 +331,11 @@ img {
 .skills_sets {
   min-width: 100%;
 }
+
 .skills__img {
-  margin-top: var(--mb-2)
+  margin-top: 6rem;
 }
+
 .skills__img img {
   align-self: center;
   border-radius: .5rem;
@@ -369,22 +362,50 @@ img {
   z-index: var(--z-back);
 }
 
+.skills_logo__img{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.skills_logo__img img {
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
 .skills__95 {
   width: 95%;
+}
+
+.skills__90 {
+  width: 90%;
 }
 
 .skills__85 {
   width: 85%;
 }
 
+
 .skills__75 {
   width: 75%;
+}
+
+.skills__70 {
+  width: 70%;
 }
 
 .skills__60 {
   width: 60%;
 }
 
+.skills__40 {
+  width: 40%;
+}
+
+.skills__30 {
+  width: 30%;
+}
 /* Work */
 .work {
   text-align: center;
@@ -467,7 +488,6 @@ input[type="text"].contact__input::placeholder {
 }
 
 .footer__icon{
-
   color: var(--second-color);
   margin: var(--mb-2) var(--mb-1);
 
@@ -480,6 +500,7 @@ input[type="text"].contact__input::placeholder {
 }
 
 @media screen and (min-width: 768px) {
+  
   body {
     margin: 0px;
   }
@@ -562,8 +583,14 @@ input[type="text"].contact__input::placeholder {
   }
 
   .about__img img{
+    opacity: .7;
     width: 400px;
     border-radius: 5px;
+    transition: all 1s;
+  }
+
+  .about__img img:hover{
+    opacity: 1;
   }
 
   .work__container {
