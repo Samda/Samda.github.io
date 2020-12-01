@@ -11,7 +11,7 @@ const showMenu = (toggleId, navId) => {
 
 showMenu('nav-toggle', 'nav-menu');
 
-const navLink = document.querySelectorAll('.nav__link') 
+const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
     navLink.forEach( n => n.classList.remove('active'))
@@ -30,10 +30,11 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
-    reset: true
+    reset: true,
+    mobile: true
 })
 
-// Animate Contact Button 
+// Animate Contact Button
 // $(window).bind('scroll', function() {
 //     if($('.button')[0].getBoundingClientRect().top >= 64){
 //         $('button').addClass('button-reveal');
@@ -110,5 +111,5 @@ sr.reveal('.skills__img', {delay: 400})
 // Work
 sr.reveal('.work__img', {interval: 200})
 
-// Contact 
+// Contact
 sr.reveal('.contact__input', {interval: 200})
